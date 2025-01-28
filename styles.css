@@ -97,6 +97,30 @@ body
     align-items: center;
     z-index: -3;
 }
+img
+{
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.title-box
+{
+    color: var(--clr-white);
+    grid-column: 3/7;
+    text-align:center;
+    margin-top:auto;
+}
+.text-container
+{
+    padding:2em;
+    font-weight: 700;
+    font-size:larger;
+}
 .about
 {
     display: grid;
@@ -118,7 +142,6 @@ body
 }
 .box1
 {
-    background: url("./images/Gaming\ Station.png");
     grid-column: 2/4;
     grid-row: 5/7;
     border-radius: 3rem;
@@ -131,7 +154,6 @@ body
 }
 .box2
 {
-    background: url("./images/TinDog.png");
     grid-column: 4/6;
     grid-row: 5/7;
     border-radius: 3rem;
@@ -144,51 +166,27 @@ body
 }
 .box3
 {
-    background: url("./images/Move\ It.png");
     grid-column: 6/8;
     grid-row: 5/7;
     border-radius: 3rem;
     transition: all 0.2s ease-in-out;
+    overflow: hidden;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.title-box
-{
-    color: var(--clr-white);
-    grid-column: 3/7;
-    text-align:center;
-    margin-top:auto;
-}
-.text-container
-{
-    padding:2em;
-    font-weight: 700;
-    font-size:larger;
-}
-/* img
-{
-    object-fit:cover;
-    height: 100%;
-    width: 100%;
-    border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-.box1:hover
+.box1:hover 
 {
     transform: scale(0.9);
-    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .box2:hover
 {
+
     transform: scale(0.9);
-    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,8 +194,24 @@ body
 .box3:hover
 {
     transform: scale(0.9);
-    opacity: 0.8;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+p
+{
+    position: absolute;
+    opacity: 0;
+}
+.box1:hover p
+{
+    opacity: 1;
+}
+.box2:hover p
+{
+    opacity: 1;
+}
+.box3:hover p
+{
+    opacity: 1;
 }

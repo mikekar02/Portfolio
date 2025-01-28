@@ -20,6 +20,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:var(--ff-primary),var(--ff-secondary);
 }
 body
 {
@@ -129,8 +130,10 @@ body
     grid-column: 6/8;
     grid-row: 5/7;
 }
-.h1
+.title-box
 {
-    z-index: 1 ;
-    color:var(--clr-white);
+    color: var(--clr-white);
+    grid-column: 3/7;
+    text-align:center;
+    margin-top:auto;
 }

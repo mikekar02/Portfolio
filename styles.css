@@ -24,14 +24,16 @@
 body
 {
     background-color:var(--clr-bg);
-    height: 10000px;
     position: relative;
+    height: 10000px;
 }
-.container
+
+/* navbar section */
+.navbar-container
 {
     width: 100%;
     height: 8rem;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
@@ -50,7 +52,6 @@ body
     justify-content: space-around;
     align-items: center;
     height: 6rem;
-
 }
 .button
 {
@@ -62,7 +63,6 @@ body
     padding: 0.75rem 1.5rem;
     border-radius: 3em;
     text-align: center;
-    display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 0.5;
@@ -72,26 +72,59 @@ body
 .button i 
 {
     font-size: 1.2rem; 
-    display: inline-block; 
-    vertical-align: middle; 
-}
-
-.button span 
-{
-    display: inline-block; 
-    vertical-align: middle; 
+    padding-right: 5px;
 }
 .button:hover
 {
     background-color: var(--clr-primary);
     border-radius: 3em;
 }
-.button:active
+.button:focus
 {
-    background-color: var(--clr-primary-active);
+    background-color: var(--clr-primary);
 }
-
 .fa-solid
 {
     margin-right: 4px;
+}
+/* about section */
+.about-container
+{
+    height:50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about
+{
+    display: grid;
+    grid-template-columns:repeat(8,1fr);
+    grid-template-rows:repeat(7,1fr);
+    gap: 10px;
+    width: 80%;
+    height: 90%;
+    background-color: black;
+    border-radius: 3rem;
+}
+.text-container
+{
+    grid-column: 2/8;
+    grid-row: 2/5;
+    background-color:var(--clr-black);
+    border-radius:3rem;
+}
+.box1
+{
+    grid-column: 2/4;
+    grid-row: 5/7;
+}
+.box2
+{
+    grid-column: 4/6;
+    grid-row: 5/7;
+}
+.box3
+{
+    grid-column: 6/8;
+    grid-row: 5/7;
 }

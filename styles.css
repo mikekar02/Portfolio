@@ -91,11 +91,10 @@ body
 /* about section */
 .about-container
 {
-    height:     70rem;
+    height: 70rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -3;
 }
 img
 {
@@ -140,58 +139,34 @@ img
     background-color:var(--clr-black);
     border-radius:3rem;
 }
-.box1
+.box
+{
+    border-radius: 3rem;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box1
 {
     grid-column: 2/4;
     grid-row: 5/7;
-    border-radius: 3rem;
-    transition: all 0.2s ease-in-out;
-    overflow: hidden;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.box2
+
+#box2
 {
     grid-column: 4/6;
     grid-row: 5/7;
-    border-radius: 3rem;
-    transition: all 0.2s ease-in-out;
-    overflow: hidden;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.box3
+#box3
 {
     grid-column: 6/8;
     grid-row: 5/7;
-    border-radius: 3rem;
-    transition: all 0.2s ease-in-out;
-    overflow: hidden;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.box1:hover 
-{
-    transform: scale(0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box2:hover
-{
 
-    transform: scale(0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box3:hover
+.box:hover 
 {
     transform: scale(0.9);
     display: flex;
@@ -203,33 +178,15 @@ p
     position: absolute;
     opacity: 0;
 }
-.box1:hover p
+
+.box:hover p
 {
     opacity: 1;
     transition: all 0.2s ease-in-out;
     font-size: xx-large;
 }
-.box2:hover p
+.box:hover .img-edit
 {
-    opacity: 1;
+    filter: blur(10px);
     transition: all 0.2s ease-in-out;
-    font-size: xx-large;
-}
-.box3:hover p
-{
-    opacity: 1;
-    transition: all 0.2s ease-in-out;
-    font-size: xx-large;
-}
-.box1:hover .img-edit
-{
-    filter: blur(10px);
-}
-.box2:hover .img-edit
-{
-    filter: blur(10px);
-}
-.box3:hover .img-edit
-{
-    filter: blur(10px);
 }

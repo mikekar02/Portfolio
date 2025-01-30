@@ -93,7 +93,7 @@ body
     height: 70rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 img
 {
@@ -196,7 +196,8 @@ img
     display: grid;
     grid-template-columns:repeat(8,1fr);
     grid-template-rows:repeat(8,1fr);
-    gap: 10px;
+    row-gap: 30px;
+    column-gap: 10px;
     width: 80%;
     height: 90%;
     background-color: black;
@@ -205,16 +206,16 @@ img
 }
 .prj-img1
 {
-grid-row:2/4 ;
-grid-column:1/6 ;
-z-index: 0;
-border-radius: 3rem;
-transition: all 0.2s ease-in-out;
-overflow: hidden;
-text-decoration: none;
-display: flex;
-justify-content: center;
-align-items: center;
+    grid-row:2/4 ;
+    grid-column:1/6 ;
+    z-index: 0;
+    border-radius: 3rem;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .prj-text1

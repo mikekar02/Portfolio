@@ -9,7 +9,7 @@
     --clr-primary:#DC10B2;
     --clr-primary-active:#b11091;
     --clr-primary-dark:#A23FD9;
-    --clr-bg:#0e0e0e;
+    --clr-bg:#1f1f1f;
     --clr-white:#fff;
     --clr-black:#222;
     --ff-primary:'Open Sans',serif;
@@ -36,7 +36,7 @@ body
     height: 8rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: sticky;
     top: 0;
 }
@@ -191,71 +191,54 @@ img
     filter: blur(10px);
     transition: all 0.2s ease-in-out;
 }
+/* skills section */
 .skills
 {
     display: grid;
     grid-template-columns:repeat(8,1fr);
     grid-template-rows:repeat(8,1fr);
-    row-gap: 30px;
-    column-gap: 10px;
+    gap:10px;
     width: 80%;
     height: 90%;
     background-color: black;
     border-radius: 3rem;
     max-width: 1200px;
 }
-.prj-img1
+.prj-img
 {
-    grid-row:2/4 ;
-    grid-column:1/6 ;
+    grid-row:2/6 ;
+    grid-column:2/8 ;
     z-index: 0;
     border-radius: 3rem;
     transition: all 0.2s ease-in-out;
-    overflow: hidden;
     text-decoration: none;
+    object-fit: contain;
+}
+/* .prj-img:hover
+{
+    
+} */
+.gitbtn
+{
+    grid-column: 6/8;
+    grid-row: 7/8;
+    background-color: var(--clr-black);
+    border-radius: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 500;
 }
-.prj-text1
+.gitbtn:hover
 {
-    grid-row:2/4 ;
-    grid-column: 6/9;
-    background-color: var(--clr-black);
-    border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
+    background-color: #2e2e2e;
 }
-.prj-img2
-{
-grid-row:4/6 ;
-grid-column:4/9 ;
-}
-.prj-text2
-{
-    grid-row:4/6 ;
-    grid-column:1/4 ;
-    background-color: var(--clr-black);
-    border-radius: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-}
-.prj-img3
-{
-grid-row:6/8 ;
-grid-column:1/6 ;
-}
-.prj-text3
+.prj-text
 {
     grid-row:6/8 ;
-    grid-column: 6/9;
+    grid-column: 2/6;
     background-color: var(--clr-black);
     border-radius: 3rem;
     display: flex;
@@ -264,6 +247,7 @@ grid-column:1/6 ;
     align-items: center;
     padding: 10px;
 }
+
 .text
 {
     font-weight: 600;

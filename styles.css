@@ -220,10 +220,6 @@ img
     text-decoration: none;
     object-fit: contain;
 }
-/* .prj-img:hover
-{
-    
-} */
 .gitbtn
 {
     grid-column: 6/8;
@@ -254,9 +250,91 @@ img
     align-items: center;
     padding: 10px;
 }
-
 .text
 {
     font-weight: 600;
     font-size: large;
 }
+/* contact form */
+.form-container
+{
+    margin: 25px;
+}
+.contact
+{
+    width: 80%;
+    height: 90%;
+    background-color: black;
+    border-radius: 3rem;
+    max-width: 1200px;
+    max-height: 700px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+#contact-click
+{
+    height: 50rem;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:10px;
+    margin:30px;
+}
+.contact-box
+{
+    background-color: var(--clr-black);
+    grid-column:1/4 ;
+    grid-row:2/7;
+    border-radius: 3rem ;
+    margin-left: 30px;
+}
+.contact-input
+{
+    width: 95%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 3em;
+    color: #666;
+    font-size: large;
+}
+#textarea
+{
+    height:180px;
+    padding-top: 15px;
+    border-radius: 3em;
+}
+.contact-input:focus
+{
+    border: 2px solid var(--clr-primary);
+}
+.sbmt-btn
+{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 10px;
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    background-color: #494949;
+}
+.sbmt-btn:hover
+{
+    background-color: #575757;
+    transition: background-color 0.2s ease-in-out;
+}
+/* @media (max-width:800px) 
+{
+    .contact-input
+    {
+        width:80vw;
+    }
+} */

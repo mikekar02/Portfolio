@@ -11,21 +11,18 @@
 </head>
 <body>
     <!-- header section -->
-    <div class="navbar-container">
-        <div class="empty-box"></div>
+    <header class="navbar-container">
         <!-- <div class="empty-box"> -->
-            <div class="navbar">
+            <nav class="navbar">
                 <a href="#" class="button"><i class="fa-solid fa-house "></i><span>Home</span></a>
                 <a href="#abt-click" class="button"><i class="fa-solid fa-circle-user"></i><span>About Me</span></a>
                 <a href="#skills-click" class="button"><i class="fa-solid fa-table-list"></i><span>Skills</span></a>
                 <a href="#" class="button"><i class="fa-solid fa-envelope"></i><span>Contact Me</span></a>
-            </div>
-        </div>
-        <div class="empty-box"></div>
-    </div>  
+            </nav>
+    </header>  
     <!-- end of header section -->
     <!-- about section -->
-    <div class="container" id="abt-click">
+    <section class="container" id="abt-click">
         <div class="about">
             <div class="title-box"><h1>About Me</h1></div>
                 <div class="text-container">
@@ -37,11 +34,10 @@
                 <a href="#pr2" class="box" id="box2"><img src="./images/TinDog.png" alt="TinDog Website" class="img-edit"><p class="box-name">TinDog</p></a>
                 <a href="#pr3" class="box" id="box3"><img src="./images/Move It.png" alt="Move It" class="img-edit"><p class="box-name" >Move It</p></a>
             </div>
-        </div>
-    </div>
+    </section>
     <!-- end of about section -->
     <!-- skills section -->
-    <div class="container" id="skills-click">
+    <section class="container" id="skills-click">
         <div class="skills">
             <div class="title-box">
                 <h1>Skills</h1>
@@ -60,10 +56,10 @@
             </div>
             <a href="https://github.com/mikekar02/gaming-station" class="gitbtn" target="_blank"><p class="text">Learn More</p></a>
         </div>
-    </div>
+    </section>
     <!-- end of first skill -->
     <!-- second skill -->
-    <div class="container" id="pr2">
+    <section class="container" id="pr2">
         <div class="skills">
             <div class="title-box">
             </div>
@@ -73,15 +69,15 @@
             <div class="prj-text">
                 <h1>TinDog</h1>
                 <p class="text">  
-                    This project was build using the float property as a school assignment to familiarize ourselves with this sort of layout and prepare us for the introduction of flexbox.
+                    This was the final project of Angela Yu's bootstrap section and utilized both the bootstrap toolkit as well as some css additions
                 </p>
             </div>
             <a href="https://github.com/mikekar02/Angela-Yu-course/tree/main/Section%2011%20Bootstrap/11.3%20TinDog%20Project" class="gitbtn" target="_blank"><p class="text">Learn More</p></a>
         </div>
-    </div>
+    </section>
     <!-- end of second skill -->
     <!-- third skill -->
-    <div class="container" id="pr3">
+    <section class="container" id="pr3">
         <div class="skills">
             <div class="title-box">
             </div>
@@ -91,13 +87,39 @@
             <div class="prj-text">
                 <h1>Gaming Station</h1>
                 <p class="text">  
-                    This project was build using the float property as a school assignment to familiarize ourselves with this sort of layout and prepare us for the introduction of flexbox.
+                    This project was developed using the bootstrap toolkit as a part of Angela Yu's web development course.
                 </p>
             </div>
             <a href="https://github.com/mikekar02/Angela-Yu-course/tree/main/Section%2011%20Bootstrap/11.2%20Bootstrap%20Components" class="gitbtn" target="_blank"><p class="text">Learn More</p></a>
         </div>
-    </div>
+    </section>
     <!-- end of third skill -->
     <!-- end of skills section -->
+    <!-- contact me section -->
+    <section class="container" id="contact-click">
+        <div class="contact">
+            <div class="contact-box">
+                <div class="form-container">
+                    <div class="form-title">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <!-- Replace with your Access Key -->
+                        <input type="hidden" name="access_key" value="e566c56f-50cf-49f5-922e-c1f8ce0a26ac">           
+                        <!-- Form Inputs. Each input must have a name="" attribute -->
+                        <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                        <input type="email" name="email" placeholder="Your E-mail" class="contact-input" required>
+                        <textarea id="textarea" name="message" placeholder="Your message" class="contact-input" required></textarea>
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <button class="sbmt-btn" type="submit">Submit Message</button>
+                    </form>
+                
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end of contact me section -->
 </body>
 </html>
